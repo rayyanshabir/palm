@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="Image/png" href="../IMAGES/dc-removebg-preview.png">
+  <title>Volunteer Application Form</title>
+  <style>
+    /* Basic CSS reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #716f6fb7;
+    }
+
+    /* Container styles */
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Form styles */
+    form {
+      margin-top: 20px;
+    }
+
+    /* Label styles */
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Input styles */
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: #4caf50;
+    }
+
+    /* Submit button styles */
+    input[type="submit"] {
+      background-color: #000000;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+
+h2{
+    text-decoration: underline;
+}
+
+    input[type="submit"]:hover {
+      background-color: #00000099;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+    .info{
+        margin-top: 10px;
+        color: red;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline rgba(255, 0, 0, 0.345);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 style="text-align: center;">Volunteer Application Form <img src="../IMAGES/icons8-list.gif" width="15px"></h2>
+    <p class="info">If you're passionate about growing online communities and know about networking and outreach, we'd love to hear from you! Please fill out the form below to apply. If you dont know anything how to expand discord comunity please <a href="application1.html">check this out.</a><img src="../IMAGES/icons8-arrow.gif" width="13px"> </p>
+
+    <form action="https://formspree.io/f/mayrepql"
+    method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" required>
+
+      <label for="location">Location (City, Country):</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="discord-username">Discord Username:</label>
+      <input type="text" id="discord-username" name="discord-username" required>
+
+      <label for="experience">How long have you been using Discord? (Years/months)</label>
+      <input type="text" id="experience" name="experience" placeholder="example: __years  or  __months   or   fresher n/a" required>
+
+      <label for="previous-experience">Have you ever helped grow or manage a Discord community before? If so, please provide details:</label>
+      <textarea id="previous-experience" name="previous-experience" rows="4" required></textarea>
+
+      <label for="skills">What skills or strategies do you possess that you believe will help in bringing in new members to our community?</label>
+      <textarea id="skills" name="skills" rows="4" required></textarea>
+
+      <label for="networking">How comfortable are you with networking and reaching out to other programmers to promote our Discord server?</label>
+      <textarea id="networking" name="networking" rows="4" required></textarea>
+
+      <label for="availability">How many hours per week can you dedicate to promoting and growing our Discord community?</label>
+      <input type="text" id="availability" name="availability" required>
+
+      <label for="active-times">Are there specific times during the week when you're most active and available to engage with potential members?</label>
+      <textarea id="active-times" name="active-times" rows="4" required></textarea>
+
+      <label for="motivation">What motivates you to join our team and help expand our Discord community?</label>
+      <textarea id="motivation" name="motivation" rows="4" required></textarea>
+
+      <label for="suggestions">Do you have any additional ideas or suggestions on how we can effectively reach out to programmers and attract them to our Discord server?</label>
+      <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

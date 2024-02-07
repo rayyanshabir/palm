@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="Image/png" href="../IMAGES/dc-removebg-preview.png">
+    <title>DISCORD APPLY</title>
+    
+<style>  
+        body{  
+            font-family: Calibri, Helvetica, sans-serif;  
+            background: linear-gradient(45deg, #A944D0, #5381DE);  
+        }  
+        .container {  
+            padding: 50px;  
+          background-color: lightblue;  
+        }  
+          
+        input[type=text], input[type=password], textarea {  
+          width: 100%;  
+          padding: 15px;  
+          margin: 5px 0 22px 0;  
+          display: inline-block;  
+          border: none;  
+          background: #f1f1f1;  
+        }  
+        input[type=text]:focus, input[type=password]:focus {  
+          background-color: #5381de1e;  
+          outline: none;  
+        }  
+         div {  
+                    padding: 10px 0;  
+                 }  
+        hr {  
+          border: 1px solid #f1f1f1;  
+          margin-bottom: 25px;  
+        }  
+        .registerbtn {  
+          background-color: #4CAF50;  
+          color: white;  
+          padding: 16px 20px;  
+          margin: 8px 0;  
+          border: none;  
+          cursor: pointer;  
+          width: 100%;  
+          opacity: 0.9;  
+        }  
+        .registerbtn:hover {  
+          opacity: 1;  
+        }  
+        .PALM01{
+            margin-bottom: -30px;
+        }
+        .pm02{
+            margin-top: -40px;
+            margin-right: 20px;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .info p{
+            margin-top: -2px;
+            color: red;
+            text-decoration: dotted red;
+        }
+        .rle{
+            color: red;
+            font-weight: bolder;
+        }
+        </style>  
+        </head>  
+        <body>  
+            
+          <form action="https://formspree.io/f/mayrepql"
+          method="POST">  
+            <div class="container">  
+                <!-- Form content here -->
+                <center>  
+                    <div class="PALM01">
+                        <img src="../IMAGES/dc-removebg-preview.png" width="50px">
+                    </div>
+                    <h1> MOD APPLICATION <img src="../IMAGES/icons8-discord-staff-badge-48.png" width="25px"></h1> 
+                    <div class="pm02">
+                        <p>Apply For MOD Role in P.A.L.M</p>
+                        <p class="rle">*PLEASE READ ROLE INSTRUCTION CAREFULLY*</p>
+                        <p class="rle"><a href="../IMAGES/discord roles.pdf"><mark><img src="../IMAGES/icons8-triangular-flag-48.png" width="15px">CLICK HERE<img src="../IMAGES/icons8-triangular-flag-48.png" width="15px"> </mark></a></p>
+                    </div>
+                </center>  
+                <hr>  
+                <label> Firstname </label>   
+                <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+                <label> Discord Id: </label>   
+                <input type="text" name="discord" placeholder="Discord Id" size="15" required />   
+                <label> Instagram: </label>    
+                <input type="text" name="Instagram" placeholder="Instagram Id" size="15" required />   
+                <div>
+                    <label>Select Role :</label>
+                    <select name="role">
+                        <option value="Development">Development</option>
+                        <option value="Management">Management</option>
+                        <option value="Trial Mod">Trial Mod</option>
+                        <option value="Moderator">Moderator</option>
+                        <option value="Community Member">Community Member</option>
+                        <option value="Booster">Booster</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>  
+                    <label>Gender:</label><br>  
+                    <input type="radio" value="Male" name="gender" checked > Male   
+                    <input type="radio" value="Female" name="gender"> Female   
+                    <input type="radio" value="Other" name="gender"> Other  
+                </div>  
+                <label>Phone:</label>  
+                <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+                <input type="text" name="phone" placeholder="Phone no." size="10" required />   
+                <div class="info">
+                    <p>*(In College, School, Univ, etc)*</p> 
+                    <p>Your Skills, Profession.</p>
+                </div> 
+                <textarea name="currentStatus" cols="80" rows="5" placeholder="Current Status" required></textarea>  
+                <label for="email"><b>Email</b></label>  
+                <input type="text" placeholder="Enter Email" name="email" required>  
+                <label for="psw"><b>Password</b></label>  
+                <input type="password" placeholder="Enter Password" name="psw" required>  
+                <label for="psw-repeat"><b>Re-type Password</b></label>  
+                <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+                <button type="submit" class="registerbtn">Register</button>    
+            </div>  
+        </form>  
+
+        
+</body>
+</html>
