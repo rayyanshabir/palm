@@ -1,0 +1,424 @@
+body{
+    background-image: url(IMAGES/MOUNTAIN.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, p, ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+/* Apply a background color and style for the navbar */
+/* General navbar styles */
+.navbar {
+    background-color: #000000;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Style the logo */
+.logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #A944D0, #5381DE);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+/* Style the links */
+.links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect for the links */
+.links a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(169, 92, 169);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .links ul {
+        display: flex; /* Use flexbox to make the list items appear in one line */
+        justify-content: center; /* Center the list items horizontally */
+        padding-left: 0; /* Remove default padding */
+    }
+
+    .links ul li {
+        margin: 0 10px; /* Add margin to separate the list items */
+        list-style: none; /* Remove default list styles */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+  
+.heading {
+    font-size: 40px;
+    color: white;
+    display: flex;
+            align-items: center;
+}
+h6{
+    font-size: 6px;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 80px; /* Remove default margin */
+}
+
+.line {
+    display: block;
+}
+
+.line:last-child {
+    text-align: left;
+}
+.made-by {
+    color: grey;
+    font-size: 12px;
+    margin-left: 10px; /* Add some space between "For Mastery" and "(-made by rayaan)" */
+}
+
+
+
+@media (max-width: 768px){
+  
+    .heading {
+        font-size: 30px;
+        color: white;
+        display: flex;
+                align-items: center;
+    } 
+    
+
+    .line:last-child {
+        text-align: left;
+    }
+.line {
+    display: block;
+}
+}
+
+
+
+
+
+
+
+/* button here */
+
+.custom-button {
+    background-color: #000000; /* Green background color */
+    border: 1px solid #5865F2; /* Remove border */
+    color: #5865F2; /* Text color */
+    font-weight: bolder;
+    padding: 20px 32px; /* Padding */
+    text-align: center; /* Center text horizontally */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it inline-block to adjust padding */
+    font-size: 20px; /* Font size */
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: -2000px;
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+.custom-button img {
+    vertical-align: middle; /* Align the image vertically in the middle */
+    margin-right: 10px; /* Add some space between the image and text (adjust as needed) */
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.custom-button:hover {
+    background-color: #55575581; /* Darker green color on hover */
+}
+
+
+
+.whatsapp-button {
+    background-color: #ffffff; /* Green background color */
+    border: 1px solid #2ce72f; /* Remove border */
+    color: #08ea22; /* Text color */
+    font-weight: bolder;
+    padding: 20px 32px; /* Padding */
+    text-align: center; /* Center text horizontally */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it inline-block to adjust padding */
+    font-size: 20px; /* Font size */
+    margin-left: 30px;
+    margin-bottom: 50px;
+    margin-top: -2000px;
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+.whatsapp-button img {
+    vertical-align: middle; /* Align the image vertically in the middle */
+    margin-right: 10px; /* Add some space between the image and text (adjust as needed) */
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.whatsapp-button:hover {
+    background-color: #ffffffe0; /* Darker green color on hover */
+}
+
+
+
+
+
+/* Styles for mobile view */
+@media screen and (max-width: 767px) {
+    .custom-button,
+    .whatsapp-button {
+        font-size: 16px; /* Font size for mobile */
+        padding: 10px 20px; /* Padding for mobile */
+        margin: 10px; /* Adjust margin as needed */
+        display: inline-block; /* Display buttons horizontally */
+    }
+}
+/* rules */
+/* Style for div with class 'container' */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    
+    padding: 20px;
+    
+    border-radius: 8px;
+}
+
+/* Style for div with class 'section1' */
+.section1 {
+    color: white;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border: 0px solid #823232;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Style for div with class 'section2' */
+
+
+/* Heading styles */
+h1 {
+    color: #ffffff;
+}
+
+
+
+h3 {
+    color: #777;
+}
+
+ol{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  #5381DE;
+    text-decoration: underline;
+}
+
+ul{
+    margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.job {
+    margin-right: 600px;
+    margin-left: 80px;
+    margin-top: 20px;
+    background: rgba(244, 244, 244, 0.176);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.job h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px; /* Adjust margin between h2 and p */
+}
+
+.job p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduce the margin between paragraphs */
+}
+
+.OPEN {
+    font-size: 12px;
+    margin-top: 15px;
+    color: red;
+}
+
+
+.apply-button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin to the top of the button */
+}
+
+.apply-button:hover {
+    background-color: #000000a4;
+}
+
+.apli{
+    color:white;
+    margin-right: 600px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .job {
+        margin-right: 20px; /* Reduce margin on the right */
+        margin-left: 20px; /* Reduce margin on the left */
+    }
+
+    .job h2 {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 10px; /* Adjust margin between h2 and p */
+    }
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column; /* Display cards in a column */
+    align-items: center; /* Center align items horizontally */
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Added margin for spacing between cards */
+    overflow: hidden;
+    width: 400px;
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+
+  .card-description {
+    color: #666;
+    margin: 0;
+  }
+
+  .card-link {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    border-top: 1px solid #007bff;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+  }
+
+  .card-link:hover {
+    background-color: #0056b3;
+  }
+
+  /* Mobile Responsive Styles */
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: calc(100% - 40px);
+    }
+  }
