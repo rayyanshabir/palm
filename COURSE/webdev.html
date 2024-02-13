@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="Image/png" href="../IMAGES/dc-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .enrollment-details {
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        h1 {
+            text-decoration: underline;
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #738aa3;
+        }
+
+        .form-control {
+            display: block;
+            width: calc(100% - 20px);
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .radio-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .select-control {
+            width: calc(100% - 20px);
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .select-control:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .pp {
+            text-align: center;
+            color: #ffffff;
+            font-size: 15px;
+        }
+        .tick-list {
+            list-style-type: none; /* remove default bullet points */
+        }
+
+        .tick-list li {
+            color: red;
+            margin-top: 20px;
+            display: flex; /* use flexbox */
+            align-items: center; /* vertically center content */
+        }
+
+        .tick-list li::before {
+            content: "✅"; /* Emoji code for a check mark */
+            margin-right: 5px; /* adjust spacing between the tick mark and the list item text */
+            flex-shrink: 0; /* Ensure the tick mark doesn't shrink */
+        }
+
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .tick-list li::before {
+                margin-left: 10px; /* Adjust margin for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">P.A.L.M <a href="index.html"><img class="plm" src="../IMAGES/dc-removebg-preview.png"
+                    width="15"></a></div>
+        <div class="links">
+            <ul>
+                <li> <a href="../index.html">Home</a> </li>
+                <li> <a href="../rules.html">Rules</a></li>
+                <li> <a href="../about.html">About</a></li>
+                <li> <a href="../course.html">Courses</a></li>
+                <li> <a href="../application.html">Application</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="enrollment-details">
+        <h1>Master Frontend Development: 30 Days, 30 Projects Journey!</h1>
+        <p class="pp"> Are you ready to dive into the exciting world of frontend development? Look no further!
+            LIVELY and PALM Community proudly present our exclusive 30 Days, 30 Projects Tutorial, designed to propel
+            your skills to new heights. Embark on this immersive journey and unleash your creativity as you tackle a new
+            project each day. Whether you're a beginner or seasoned coder, our comprehensive tutorial will equip you
+            with the tools and knowledge needed to excel in the dynamic field of web development.Enroll today and let's start coding!
+        </p>
+            <ul class="tick-list">
+            <li>HTML | CSS | JAVASCRIPT</li>
+            <li>LEARN FIGMA</li>
+            <li>WORKING ON MORE THEN 30 PROJECTS</li>
+            <li>Other.</li>
+        </ul>
+    
+    </div>
+
+    <div class="container">
+        <h1>Enrollment Form</h1>
+        <form action="https://formspree.io/f/mwkgovbn"
+        method="POST">
+            <label>Name</label>
+            <input type="text" name="fullname" placeholder="Full Name" class="form-control">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email" class="form-control">
+            <label>Contact</label>
+            <input type="tel" name="phone" placeholder="Phone" class="form-control">
+            <label>Current Status</label>
+            <input type="text" name="status" placeholder="Current Status (e.g., College, School)" class="form-control">
+            <label>College/School</label>
+            <input type="text" name="college_school" placeholder="Enter name of your College/School" class="form-control">
+            <label>State</label>
+            <select name="state" class="select-control">
+                <option value="">Select State</option>
+                <option value="AN">Andaman and Nicobar Islands</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CG">Chandigarh</option>
+                <option value="CH">Chhattisgarh</option>
+                <option value="DH">Dadra and Nagar Haveli</option>
+                <option value="DD">Daman and Diu</option>
+                <option value="DL">Delhi</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu and Kashmir</option>
+                <option value="JH">Jharkhand</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="LD">Lakshadweep</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PY">Puducherry</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TS">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UK">Uttarakhand</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="WB">West Bengal</option>
+            </select> 
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
